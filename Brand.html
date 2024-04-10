@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <title>Document</title>
+    <!-- boostrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- boostrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      .demo {
+        padding-top: 20vh;
+      }
+    </style>
+  </head>
+  <body class="bg-secondary">
+    <div class="row">
+      <div class="col-12 bg-primary p-2 ps-5 text-light">
+        Inventory Management System
+      </div>
+    </div>
+    <div>
+      <nav class="navbar navbar-expand-lg ps-5 pe-5">
+        <div class="container-fluid bg-dark p-2">
+          <a class="nav-link active text-light" href="Home.html">Home</a>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="Customer.html"
+                  >Customer</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Category.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Brand.html">Brand</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Supplier.html">Supplier</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="Purchase.html">Purchase</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="order.html">Order</a>
+              </li>
+            </ul>
+            <div class="dropdown">
+              <button
+                class="btn btn-light rounded-pill dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Administdator
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="ps-5 pe-5">
+      <nav class="navbar bg-body-tertiary border-bottom border-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Brand List</span>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><i class="bi bi-plus-lg p-2"></i> Add Brand</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Category 101</option>
+                        <option value="2">Category 102</option>
+                        <option value="3">Category 103</option>
+                      </select>
+                    <label for="exampleFormControlInput1" class="form-label">Enter Brand Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" >
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Add</button>
+                  <button class="btn btn-light" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="bi bi-plus-square p-2"></i>New Brand</button>
+        </div>
+      </nav>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"></a>
+          <form class="d-flex" role="search">
+            <label for="search" id="" class="pt-2 pe-1">Search:</label>
+            <input
+              class="form-contdol me-2"
+              type="search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </nav>
+      <div class="pe-3 ps-3 pt-2 pb-3 bg-light">
+        <table class="table table-bordered">
+          <th>ID</th>
+          <th>Category</th>
+          <th>Brand Name</th>
+          <th>Status</th>
+          <th>Action</th>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Brand 303</td>
+              <td>Speaker</td>
+              <td>Active</td>
+              <td>
+                 
+                  <button class="btn btn-primary" ><i class="bi bi-pencil-square"></i></button>
+                </button>
+                <button type="button" class="btn btn-danger">
+                  <i class="bi bi-trash3-fill"></i>
+                  
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>Brand 202</td>
+              <td>Random Item</td>
+              <td>Active</td>
+              <td>
+                <button type="button" class="btn btn-primary">
+                  <i class="bi bi-pencil-square"></i>
+                </button>
+                <button type="button" class="btn btn-danger">
+                  <i class="bi bi-trash3-fill"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                >Previous</a
+              >
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
